@@ -1,0 +1,18 @@
+<resources>
+    <string name="rea_enabled">Personalized ranking</string>
+    <string name="rea_history">Use watch history for ranking</string>
+    <string name="rea_history_summary">Optional. Uses up to 100 history entries on this device. Off by default.</string>
+    <string name="rea_discovery">Discover related videos</string>
+    <string name="rea_discovery_summary">Fetch related videos for one subscription video. Adds a network request; local ranking only.</string>
+    <string name="rea_interests">Interests (words separated by spaces)</string>
+    <string name="rea_dismissed">Dismissed video IDs</string>
+    <string name="rea_dismissed_summary">Comma-separated YouTube video IDs to exclude locally.</string>
+    <string name="rea_weight_subscriptions">Subscription weight (0–10)</string>
+    <string name="rea_weight_recency">Recency weight (0–10)</string>
+    <string name="rea_weight_topics">Interest weight (0–10)</string>
+    <string name="rea_search_subscriptions">Search: subscribed channels only</string>
+    <string name="rea_search_days">Search: maximum age in days (0 = all)</string>
+    <string name="rea_search_scope">Filters only fetched results. Videos without a publication date are excluded when a date filter is active.</string>
+<string name="rea_min_duration">Search: minimum duration in seconds (0 = any)</string>
+<string name="rea_max_duration">Search: maximum duration in seconds (0 = any)</string>
+</resources>
