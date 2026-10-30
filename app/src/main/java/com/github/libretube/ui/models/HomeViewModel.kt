@@ -155,7 +155,9 @@ class HomeViewModel : ViewModel() {
             }
         }
 
-        return DatabaseHelper.filterByStreamTypeAndWatchPosition(feed, hideWatched, showUpcoming)
+        return com.github.libretube.rea.Personalization.home(
+            DatabaseHelper.filterByStreamTypeAndWatchPosition(feed, hideWatched, showUpcoming)
+        )
     }
 
     companion object {
