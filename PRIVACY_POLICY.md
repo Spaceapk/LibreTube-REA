@@ -39,3 +39,7 @@ LibreTube is an **open source software** that is built for learning and research
 
 ### Changes to Privacy Policy
 By using the LibreTube app, you consent to the handling of your information as outlined in this Privacy Policy. If you have any questions or concerns about our Privacy Policy, you are free to open an issue to ask about it or ask at the official [Matrix room](https://matrix.to/#/#LibreTube:matrix.org) of the app.
+
+## LibreTube REA fork
+
+REA ranks available subscription-feed and search candidates locally. It stores explicit interests, ranking weights, video exclusions and filters in local preferences. Use of up to 100 local watch-history entries requires a separate opt-in, disabled by default. No new profiling server or tracking SDK is added. Optional discovery, disabled by default, requests related-video metadata from the existing content source and caches a bounded set in memory. Existing upstream network services and privacy behavior remain applicable.
