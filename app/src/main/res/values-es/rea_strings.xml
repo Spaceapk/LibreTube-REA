@@ -1,0 +1,18 @@
+<resources>
+    <string name="rea_enabled">Clasificación personalizada</string>
+    <string name="rea_history">Usar historial para las recomendaciones</string>
+    <string name="rea_history_summary">Opcional. Usa hasta 100 entradas del historial en este dispositivo. Desactivado inicialmente.</string>
+    <string name="rea_discovery">Descubrir videos relacionados</string>
+    <string name="rea_discovery_summary">Consulta videos relacionados con uno de tus canales suscritos. Añade una petición de red; la clasificación es local.</string>
+    <string name="rea_interests">Intereses (palabras separadas por espacios)</string>
+    <string name="rea_dismissed">Identificadores de videos descartados</string>
+    <string name="rea_dismissed_summary">Identificadores de YouTube separados por comas para excluirlos localmente.</string>
+    <string name="rea_weight_subscriptions">Peso de suscripciones (0–10)</string>
+    <string name="rea_weight_recency">Peso de actualidad (0–10)</string>
+    <string name="rea_weight_topics">Peso de intereses (0–10)</string>
+    <string name="rea_search_subscriptions">Búsqueda: solo canales suscritos</string>
+    <string name="rea_search_days">Búsqueda: antigüedad máxima en días (0 = todos)</string>
+    <string name="rea_search_scope">Filtra los resultados recibidos. Al filtrar por fecha se excluyen los videos sin fecha de publicación.</string>
+<string name="rea_min_duration">Búsqueda: duración mínima en segundos (0 = cualquiera)</string>
+<string name="rea_max_duration">Búsqueda: duración máxima en segundos (0 = cualquiera)</string>
+</resources>
