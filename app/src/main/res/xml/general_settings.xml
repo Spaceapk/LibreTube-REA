@@ -98,4 +98,20 @@
 
     </PreferenceCategory>
 
+
+    <PreferenceCategory app:title="LibreTube REA">
+        <SwitchPreferenceCompat app:key="rea_enabled" app:defaultValue="true" app:title="@string/rea_enabled" />
+        <SwitchPreferenceCompat app:key="rea_history_consent" app:defaultValue="false" app:title="@string/rea_history" app:summary="@string/rea_history_summary" />
+        <SwitchPreferenceCompat app:key="rea_discovery" app:defaultValue="false" app:title="@string/rea_discovery" app:summary="@string/rea_discovery_summary" />
+        <EditTextPreference app:key="rea_interests" app:title="@string/rea_interests" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="rea_dismissed" app:title="@string/rea_dismissed" app:summary="@string/rea_dismissed_summary" />
+        <EditTextPreference app:key="rea_subscription_weight" app:defaultValue="3" app:title="@string/rea_weight_subscriptions" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="rea_recency_weight" app:defaultValue="2" app:title="@string/rea_weight_recency" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="rea_topic_weight" app:defaultValue="2" app:title="@string/rea_weight_topics" app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat app:key="rea_search_subscriptions" app:defaultValue="false" app:title="@string/rea_search_subscriptions" />
+        <EditTextPreference app:key="rea_min_duration" app:defaultValue="0" app:title="@string/rea_min_duration" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="rea_max_duration" app:defaultValue="0" app:title="@string/rea_max_duration" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference app:key="rea_search_days" app:defaultValue="0" app:title="@string/rea_search_days" app:summary="@string/rea_search_scope" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
