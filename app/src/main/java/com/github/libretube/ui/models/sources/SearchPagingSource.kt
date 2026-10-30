@@ -1,5 +1,6 @@
 package com.github.libretube.ui.models.sources
 
+import com.github.libretube.extensions.toID
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.github.libretube.api.MediaServiceRepository
@@ -12,6 +13,8 @@ class SearchPagingSource(
     private val searchFilter: String,
     private val onSearchSuggestion: (Pair<String, Boolean>?) -> Unit
 ) : PagingSource<String, ContentItem>() {
+    private val seenVideoIds = mutableSetOf<String>()
+
     override fun getRefreshKey(state: PagingState<String, ContentItem>) = null
 
     override suspend fun load(params: LoadParams<String>): LoadResult<String, ContentItem> {
@@ -28,7 +31,15 @@ class SearchPagingSource(
                     }
             }
 
-            LoadResult.Page(result.items, null, result.nextpage)
+            LoadResult.Page(
+                com.github.libretube.rea.Personalization.search(result.items, searchQuery).filter {
+                    it.type != com.github.libretube.api.obj.StreamItem.TYPE_STREAM ||
+                        seenVideoIds.add(it.url.toID())
+                },
+                null, result.nextpage
+            )
+        } catch (e: kotlinx.coroutines.CancellationException) {
+            throw e
         } catch (e: Exception) {
             LoadResult.Error(e)
         }
